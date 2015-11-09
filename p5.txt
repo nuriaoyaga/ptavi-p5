@@ -20,12 +20,12 @@ Se ha capturado una sesión SIP (archivo sip.cap.gz), que se puede abrir con Wir
 
 3. Antes de analizar las tramas, mira las estadísticas generales que aparecen en el menú de Statistics. En el apartado de jerarquía de protocolos (Protocol Hierarchy) se puede ver el porcentaje del tráfico correspondiente al protocolo TCP y UDP.
  ** ¿Cuál de los dos es mayor? ¿Es esto consistente con una aplicación que transmite en tiempo real? Es mayor UDP, y es consistente porque no necesitamostanto del control de paquetes, nos interesa que el tráfico sea algo fluido.
- ** ¿Qué otros protocolos podemos ver en la jerarquía de protocolos? Ethernet, IP4, SIP, DNS, RTP, RTCP, HTP, ICMP, ARP
+ ** ¿Qué otros protocolos podemos ver en la jerarquía de protocolos? Ethernet y dentro de este: IP4, SIP, DNS, RTP, RTCP, HTTP, ICMP. Tambien tenemos ARP
 
 
 4. Observa por encima el flujo de tramas en el menú de Statistics en IO Graphs. La captura que estamos viendo incluye desde la inicialización (registro) de la aplicación hasta su finalización, con una llamada entremedias.
- ** Filtra por sip para conocer cuándo se envían paquetes SIP. ¿En qué segundos tienen lugar esos envíos?
- ** Y los paquetes con RTP, ¿cuándo se envían?
+ ** Filtra por sip para conocer cuándo se envían paquetes SIP. ¿En qué segundos tienen lugar esos envíos? 7.5s, 13.5s, 16-16.5s, 38-39.5s, 55.5-56s
+ ** Y los paquetes con RTP, ¿cuándo se envían? Mientras tiene lugar la llamada, entre los segundos 17 y 38.5 aproximadamente.
 
 
 
