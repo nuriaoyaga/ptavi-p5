@@ -105,9 +105,15 @@ Se ha capturado una sesión SIP (archivo sip.cap.gz), que se puede abrir con Wir
 
 11. Una vez conectado, estudia el intercambio de tramas.
  ** ¿Qué protocolo(s) se utiliza(n)? ¿Para qué sirven estos protocolos?
+    RTP: Es un protocolo de nivel de sesión utilizado para la transmisión de información en tiempo real, como por ejemplo audio y vídeo en una video-conferencia.
+    RTPC: Es un protocolo de comunicación que proporciona información de control que está asociado con un flujo de datos para una aplicación multimedia (flujo RTP). 
  ** ¿Cuál es el tamaño de paquete de los mismos?
+    RTP: 214
+    RTCP: 43
  ** ¿Se utilizan bits de padding?
+    No, el campo Padding de la cabecera RTP aparece a 0 (False)
  ** ¿Cuál es la periodicidad de los paquetes que se envían?
+
  ** ¿Cuántos bits/segundo estamos enviando?
 
 
