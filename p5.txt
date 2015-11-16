@@ -171,9 +171,11 @@ Se ha capturado una sesión SIP (archivo sip.cap.gz), que se puede abrir con Wir
 
 16. Finalmente, se cierra la aplicación de VozIP.
  ** ¿Por qué aparece una instrucción SIP del tipo REGISTER?
+    Lo que se está haciendo es dar de baja al usuario, el expires de este mensaje REGISTER es igual a 0
  ** ¿En qué trama sucede esto?
+    950
  ** ¿En qué se diferencia con la instrucción que se utilizó con anterioridad (al principio de la sesión)?
-
+    En que el expires es igual a 0
 
 
 [Al terminar el ejercicio es recomendable hacer commit de los ficheros modificados]
